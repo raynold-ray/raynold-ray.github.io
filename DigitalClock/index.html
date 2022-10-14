@@ -1,0 +1,55 @@
+<!-- 
+    Program Name:   Digital Clock
+    Developer:      Royal Raynold
+    Date:           13th October, 2022
+    FileType:       HTML
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body onload=CurrentTime();>
+
+    <!-- TITLE -->
+    <div class="title">
+        <p>Digital Clock</p>
+    </div>
+
+    <div class="main">
+
+        <!-- HOUR -->
+        <div class="holder">
+            <H1 id="hh">00</H1>
+        </div>
+
+        <!-- MINUTES -->
+        <div class="holder">
+            <H1 id="mm">00</H1>
+        </div>
+
+        <!-- SECONDS -->
+        <div class="holder">
+            <H1 id="ss">00</H1>
+        </div>
+
+        <!-- AM/ PM -->
+        <div class="holder">
+            <H1 id="apm"></H1>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Made By Raynold with a<span>☻</span></p>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
