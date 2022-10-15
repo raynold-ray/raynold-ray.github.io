@@ -1,0 +1,69 @@
+<!-- 
+Program Name:   Word Counter
+Developer:      Royal Raynold
+Date:           15th October, 2022
+FileType:       HTML
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Word Counter</h1>
+        <form action="#">
+            <table>
+                <th>
+                    <tr><p>Enter some text </p></tr>
+                    <tr><input type="text" name="SomeText" id="SomeText"></tr>
+                </th>
+            </table>
+            <input type="button" value="Analyse" id="btnAnalyse" onclick="CountVowels()">
+        </form>
+        
+        <!-- RESULTS -->
+        <table>
+            <tr>
+                <td><p>Word count</p></td>
+                <td><p class="level" id="wordCount"></p></td>
+            </tr>
+            <tr>
+                <td><p>Character count</p></td>
+                <td><p class="level" id="xsterCount"></p></td>
+            </tr>
+            <tr>
+                <td><p>Vowels</p></td>
+                <td><p class="level" id="vowels"></p></td>
+            </tr>
+            <tr>
+                <td><p>Consonants</p></td>
+                <td><p class="level" id="consonants"></p></td>
+            </tr>
+            <tr>
+                <td><p>Non-Alphanumerical Character</p></td>
+                <td><p class="level" id="xster"></p></td>
+            </tr>
+            <tr>
+                <td><p>Spaces</p></td>
+                <td><p class="level" id="spaces"></p></td>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Made By Raynold with a<span>☻</span></p>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
