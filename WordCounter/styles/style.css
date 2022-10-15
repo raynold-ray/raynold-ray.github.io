@@ -59,7 +59,8 @@ table{
     font-size: 1.1em;
 }
 .footer p {
-    position: fixed;
+    position: absolute;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     bottom: 1px;
