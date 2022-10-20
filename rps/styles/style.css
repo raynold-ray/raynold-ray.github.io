@@ -1,0 +1,97 @@
+/* 
+Program Name:   Rock, Paper, Scissor Game
+Developer:      Royal Raynold
+Date:           20th October, 2022
+FileType:       CSS
+*/
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: #3ec8ff;
+}
+.main{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+h2{
+    color: white;
+}
+.result{
+    width: 20rem;
+    height: 20rem;
+
+}
+.bubble{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.bubbles{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: in-and-out-bubbles 1s infinite ease-in-out;
+    animation: in-and-out-bubbles 1s infinite ease-in-out;
+}
+#b1{
+    -webkit-animation-delay: -0.35s;
+    animation-delay: -0.35s;
+}
+#b2{
+    -webkit-animation-delay: -0.20s;
+    animation-delay: -0.20s;
+}
+@keyframes in-and-out-bubbles{
+    0%, 100%{transform: scale(0);}
+    20% {transform: scale(1);}
+}
+@-webkit-keyframes in-and-out-bubbles{
+    0%, 100%{-webkit-transform: scale(0);}
+    20% {-webkit-transform: scale(1);}
+}
+input{
+    border: none;
+    padding: 15px;
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    background: #f9fdff;
+    transition: all .3s;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+}
+input:active{
+    transform: scale(0.9, 0.9);
+
+}
+.footer p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    bottom: 1px;
+    color: rgb(104, 104, 104);
+    font-size: .8em;
+}
+
+/* SCREEN WIDTH >= 300PX */
+@media screen and (max-width: 300px){
+    .result{
+        width: 15rem;
+    }
+    h2{
+        word-wrap: break-word;
+        padding: 10px;
+    }
+    input{
+        width: 80%;
+    }
+}

@@ -1,0 +1,37 @@
+<!-- 
+Program Name:   Rock, Paper, Scissor Game
+Developer:      Royal Raynold
+Date:           20th October, 2022
+FileType:       HTML
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body onload="HideLoad()">
+    <div class="main" align="center">
+        <h2>Rock, Paper, Scissors</h2>
+        <div class="result" id="result"></div>
+
+        <!-- LOADING BUBBLES -->
+        <div class="bubble" id="bubble">
+            <div class="bubbles" id="b1"></div>
+            <div class="bubbles" id="b2"></div>
+            <div class="bubbles" class="b3"></div>
+        </div>
+        <input type="button" value="Refresh" id="btnStart" onclick="Start()">
+
+        <!-- FOOTER -->
+    <div class="footer">
+        <p>Made By Raynold with a<span>☻</span></p>
+    </div>
+    </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
