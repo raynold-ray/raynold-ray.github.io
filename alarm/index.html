@@ -1,0 +1,38 @@
+<!-- 
+Program Name:   Alarm Clock
+Developer:      Royal Raynold
+Date:           2nd November, 2022
+FileType:       HTML
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body onload="CurrentTime()">
+    <div class="main" align="center">
+        <h1>Alarm Clock</h1>
+        <span></span>
+        <img src="./assets/alarm.svg" alt="">
+        <div class="lower">
+            <h2 id="dTime">00:00:00:am</h2>
+            <div class="inputs">
+                <input type="text" pattern="[0-9]*" name="hour" id="hour" placeholder="HH">
+                <input type="text" pattern="[0-9]*" name="min" id="min" placeholder="MM">
+                <input type="text" pattern="[0-9]*" name="sec" id="sec" placeholder="SS">
+                <p id="sss"></p>
+            </div>
+            <button onclick="Validate()">Set Alarm</button>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Made By Raynold with a<span>☻</span></p>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
