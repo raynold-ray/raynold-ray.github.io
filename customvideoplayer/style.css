@@ -1,0 +1,81 @@
+/* 
+Program Name:   Custom MP4 Video Player
+Developer:      Royal Raynold
+Date:           11th November, 2022
+FileType:       CSS
+*/
+body{
+    background: #051974;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 900px;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+.player.fullscreen{
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+}
+.progress{
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+.aprogress{
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    height: 7px;
+    z-index: 1;
+}
+.pBar{
+    position: absolute;
+    background: #2b49cc;
+    width: 0;
+    height: 2px;
+}
+video{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+.controlArea{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 50px;
+}
+.left{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.center{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    color: rgb(196, 196, 196);
+}

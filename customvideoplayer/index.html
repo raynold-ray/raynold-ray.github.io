@@ -1,0 +1,61 @@
+<!-- 
+Program Name:   Custom MP4 Video Player
+Developer:      Royal Raynold
+Date:           11th November, 2022
+FileType:       HTML
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/fa-solid.css">
+</head>
+<body>
+    <div class="player" align="center">
+
+        <!-- CUSTOM PROGRESS BAR -->
+        <div class="aprogress" id="aProgress"></div>
+        <div class="progress" id="bProgress">
+            <div class="pBar" id="pBar"></div>
+        </div>
+
+        <!-- VIDEO SOURCE -->
+        <video id="videoclass" src="./EarBuds_x264.mp4"></video>
+        <div class="controlArea" id="cArea">
+
+            <!-- LEFT CONTROLS -->
+            <div class="left">
+                <p class="cTime" id="cTime">00:00</p>
+            </div>
+
+            <!-- CENTER CONTROLS -->
+            <div class="center">
+                <i class="fas fa-backward" id="bwd"></i>
+                <i class="fas fa-play" id="playPause"></i>
+                <i class="fas fa-forward" id="fwd"></i>
+            </div>
+
+            <!-- RIGHTSIDE CONTROLS -->
+            <div class="right">
+                <p class="maxTime" id="maxTime">00:00</p>
+                <i class="fas fa-volume-up" id="vUp"></i>
+                <i class="fas fa-expand" id="expand" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Made By Raynold with a🤔</p>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./script.js"></script>
+</body>
+</html>
