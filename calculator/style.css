@@ -1,0 +1,114 @@
+/* 
+Program Name:   Calculator
+Developer:      Royal Raynold
+Date:           12th November, 2022
+FileType:       CSS
+*/
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #d8d8d8;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-top-right-radius: 20px;
+    max-width: 500px;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+.top{
+    padding: 20px;
+    border-radius: 10px;
+}
+.atitle{
+    font-weight: bold;
+}
+.display{
+    border-radius: 5px;
+    height: 100%;
+}
+.iInput{
+    text-align: right;
+    word-wrap: break-word;
+}
+.result{
+    text-align: right;
+    font-size: 2.5rem;
+    word-wrap: break-word;
+}
+.buttons{
+    background: black;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+}
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(96%/4);
+    height: 50px;
+    margin-top: 5px;
+    background: #030303;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: medium;
+}
+.btnSeta button{
+    width: calc(100%/6);
+}
+button:hover{
+    background: rgb(22, 22, 22);
+}
+button:active{
+    background: rgb(218, 218, 218);
+}
+#btnClear{
+    background: rgb(15, 15, 15);
+}
+#btnClear:hover{
+    background: rgb(28, 180, 22);
+}
+#btnPlus:hover{
+    background: rgb(250, 0, 0);
+}
+#btnSub:hover{
+    background: rgb(100, 44, 255);
+}
+#btnMulti:hover{
+    background: rgb(41, 255, 51);
+}
+#btnDiv:hover{
+    background: rgb(0, 200, 214);
+}
+.footer p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: x-small;
+}
+
+/* SCREEN WIDTH <= 490 PIXELS */
+@media screen and (max-width: 490px) {
+    button{
+        width: calc(93%/4);
+    }
+}
+
+/* SCREEN WIDTH <= 300 PIXELS */
+@media screen and (max-width: 300px) {
+    .main{
+        width: 250PX;
+    }
+}
