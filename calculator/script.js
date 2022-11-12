@@ -142,8 +142,8 @@ btnPercent.addEventListener("click", () =>{
 // Get the result as per the data in the array
 btnEqu.addEventListener("click", () =>{
     if (iInput.innerText.length == 0){return}
-    if(iInput.innerText%iInput.innerText != 0){return}
-    if(ops.length < 3){result.innerText = parseInt(iInput.innerText);}
+    //if(iInput.innerText%iInput.innerText != 0){return}
+    if(ops.length < 2){result.innerText = parseInt(iInput.innerText);}
     
     tLength = ops.toString().replace(/,/g, "").length;
     res = ops.toString().replace(/,/g, "") + iInput.innerText.substring(tLength);
