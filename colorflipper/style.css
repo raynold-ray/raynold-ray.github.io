@@ -1,0 +1,54 @@
+/* 
+Program Name:   Color Flipper
+Developer:      Royal Raynold
+Date:           12th November, 2022
+FileType:       CSS
+*/
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+body{
+    background: #e2a600;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: white;
+}
+table{
+    border: 1px solid ;
+    width: 150px;
+}
+button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    font-size: medium;
+    color: black;
+    margin-bottom: 20px;
+    transition: all .2s ease-out;
+}
+button:hover{
+    transform: translateY(-5px);
+}
+button:active{
+    background: #f7ba15;
+}
+.footer p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: x-small;
+}
