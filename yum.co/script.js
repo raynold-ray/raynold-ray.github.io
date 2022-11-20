@@ -3,6 +3,9 @@ const btnClose = document.getElementById("btnClose");
 const btnSearch = document.getElementById("btnSearch");
 const links = document.getElementById("links");
 const btnMenu = document.getElementById("menu");
+//const btnFav = document.getElementById("fav");
+const addCart = document.getElementById("addCart");
+
 searchDiv.classList.toggle("disable");
 links.classList.toggle("disable");
 
