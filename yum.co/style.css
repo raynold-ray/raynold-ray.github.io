@@ -584,8 +584,8 @@ form .check:hover{
 }
 
 @media screen and (max-width: 450px) {
-    .rightSide{
-        margin-top: 20px;
+    .content{
+        margin-top: 30x;
     }
     .selection{
         grid-template-columns: repeat(1, 1fr);
