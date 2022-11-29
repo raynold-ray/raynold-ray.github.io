@@ -1,0 +1,207 @@
+/* 
+Program Name:   Custom Music Player
+Developer:      Royal Raynold
+Date:           29th November, 2022
+FileType:       CSS
+*/
+body{
+    background: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    max-width: 500px;
+    width: 400px;
+    height: 400px;
+}
+h4{
+    width: 100%;
+    text-align: center;
+    color: #020247;
+    font-size: .9rem;
+
+}
+.progress{
+    width: 100%;
+    height: 100%;
+    border-radius: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 100px 20px rgba(0, 25, 250, 0.2);
+    border: 5px solid #b0b0c4;
+}
+.playAnim{
+    animation: rotate 90s linear infinite;
+}
+.green{
+    box-shadow: 0 0 100px 20px rgba(58, 250, 0, 0.2);
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.iImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spec{
+    margin-bottom: 20px;
+    position: absolute;
+    padding: 0 10%;
+    width: 78%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+
+}
+.spec .bar{
+    background: #eeeeee;
+    height: 2px;
+    width: 50px;
+}
+.specAnim .bar{
+    background: #eeeeee;
+    height: 90%;
+    width: 30px;
+    animation: Spectrum .8s linear infinite;
+}
+.green2{
+    background: rgba(58, 250, 0, 0.2);
+}
+
+@keyframes Spectrum{
+    50%{
+        height: 20%;
+    }
+    100%{
+        height: 98%;
+    }
+}
+
+.iImg img{
+    width: 160%;
+    height: 150%;
+}
+.iImg i{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    color: wheat;
+}
+.cControls{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+    bottom: 30px;
+    color: white;
+    font-size: 1.2rem;
+    align-items: center;
+    left: 5px;
+}
+.cControls i{
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px 10px rgba(172, 172, 172, 0.2);
+    color: red;
+    background: white;
+}
+.cControls .play{
+    background: white;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.bar:nth-child(1){
+    animation-delay: 0s;
+}
+.bar:nth-child(2){
+    animation-delay: 0.2s;
+}
+.bar:nth-child(3){
+    animation-delay: 0.3s;
+}
+.bar:nth-child(4){
+    animation-delay: 0.5s;
+}
+.bar:nth-child(5){
+    animation-delay: 0.8s;
+}
+.bar:nth-child(6){
+    animation-delay: 0.6s;
+}
+.bar:nth-child(7){
+    animation-delay: 0.15s;
+}
+.bar:nth-child(8){
+    animation-delay: 0.9s;
+}
+.bar:nth-child(9){
+    animation-delay: 0.5s;
+}
+.bar:nth-child(10){
+    animation-delay: 0.25s;
+}
+.bar:nth-child(11){
+    animation-delay: 0.85s;
+}
+
+.footer p {
+    position: absolute;
+    left: 50%;
+    font-size: .8rem;
+    transform: translateX(-50%);
+    bottom: 0px;
+    color: rgb(196, 196, 196);
+}
+
+@media screen And (max-width: 500px) {
+    .wrapper{
+        width: 200px;
+        height: 200px;
+    }
+
+    .spec{
+        width: 78%;
+        height: 200px;
+        bottom: 0px;
+    }
+    .specAnim .bar{
+        height: 98%;
+        width: 20px;
+    }
+}
+
+@media screen And (max-width: 400px) {
+    .wrapper{
+        width: 200px;
+        height: 200px;
+    }
+    .spec{
+        width: 78%;
+        height: 200px;
+        bottom: 0px;
+    }
+    .specAnim .bar{
+        height: 98%;
+        width: 15px;
+    }
+}
