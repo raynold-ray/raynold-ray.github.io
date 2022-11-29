@@ -18,14 +18,14 @@ let mplaying = 0;
 
 const musicList = [
     {
-        img: "./files/2021-09-17.jpg",
-        name:  "The Last Butterfly  Beautiful Piano Violin Music.mp3",
-        music: "./files/butterfly.mp3"
+        img: "./files/flower.jpg",
+        name: "NCS By Jeremusic70",
+        music: "./files/NCS_Jeremusic70.mp3"
     },
     {
-        img: "./files/flower.jpg",
-        name: "Naruto  Sadness and Sorrow Violin Cover By Taylor Davis.mp3",
-        music: "./files/naruto.mp3"
+        img: "./files/2021-09-17.jpg",
+        name:  "NCS By Mukesh",
+        music: "./files/NCS_Mukesh.mp3"
     }
 ]
 

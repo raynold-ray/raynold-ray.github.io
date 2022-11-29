@@ -5,7 +5,7 @@ Date:           29th November, 2022
 FileType:       CSS
 */
 body{
-    background: #ffffff;
+    background: #000000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .wrapper{
@@ -20,7 +20,7 @@ body{
 h4{
     width: 100%;
     text-align: center;
-    color: #020247;
+    color: #e7e7e7;
     font-size: .9rem;
 
 }
@@ -68,12 +68,12 @@ h4{
 
 }
 .spec .bar{
-    background: #eeeeee;
+    background: #0f0f0f;
     height: 2px;
     width: 50px;
 }
 .specAnim .bar{
-    background: #eeeeee;
+    background: #0f0f0f;
     height: 90%;
     width: 30px;
     animation: Spectrum .8s linear infinite;
@@ -170,7 +170,7 @@ h4{
     font-size: .8rem;
     transform: translateX(-50%);
     bottom: 0px;
-    color: rgb(196, 196, 196);
+    color: rgb(80, 80, 80);
 }
 
 @media screen And (max-width: 500px) {
