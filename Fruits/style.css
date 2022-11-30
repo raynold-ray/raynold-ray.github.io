@@ -63,7 +63,6 @@ body{
     justify-content: center;
     flex-direction: column;
     padding-top: 100px;
-    height: 100vh;
 }
 .navbar{
     position: fixed;
@@ -81,12 +80,14 @@ body{
     margin-left: 20px;
 }
 .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
     width: 80%;
-    justify-content: space-between;
-    height: 80vh;
+    padding: 20px;
+    height: 400px;
 }
 .content .image{
     width: 100%;
@@ -95,15 +96,14 @@ body{
     justify-content: center;
 }
 .content img{
-    max-width: 400px;
     width: 50%;
 }
 #name{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 #text{
-    font-size: .9rem;
+    font-size: 1.2rem;
     text-align: center;
     color: var(--darkText);
 }
@@ -134,7 +134,7 @@ body{
 
 .footer p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    bottom: 10px;
+    margin-top: 100vh;
     color: var(--darkText);
     text-align: center;
     margin-bottom: 10px;
@@ -142,14 +142,7 @@ body{
 
 @media screen And (max-width:600px) {
     .nav{
-        top: 0%;
-    }
-    .content{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        padding-top: 40%;
+        top: -20%;
     }
     #text{
         font-size: 1rem;
@@ -158,14 +151,7 @@ body{
 
 @media screen And (max-width:400px) {
     .nav{
-        top: 0%;
-    }
-    .content{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        padding-top: 60%;
+        top: -30%;
     }
     #text{
         font-size: 1rem;
