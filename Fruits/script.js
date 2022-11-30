@@ -28,7 +28,7 @@ const fruitList = [
     {
         fPath: "./img/Black-Grapes.png",
         fImg: "Grapes",
-        fName: "A diet that is rich in fruits and vegetables has been linked to a reduced risk of various conditions, including heart disease, diabetes, cancer, and obesity. Like other fruits and vegetables, grapes are a good source of fiber and wate",
+        fName: "A diet that is rich in fruits and vegetables has been linked to a reduced risk of various conditions, including heart disease, diabetes, cancer, and obesity. Like other fruits and vegetables, grapes are a good source of fiber and water",
         bgColor: "purple"
     },
     {
