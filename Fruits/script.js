@@ -1,3 +1,9 @@
+/* 
+Program Name:   Fruit Benefits
+Developer:      Royal Raynold
+Date:           30th November, 2022
+FileType:       JavaScript
+*/
 const btnLeft = document.getElementById("left");
 const btnRight = document.getElementById("right");
 const mName = document.getElementById("name");
