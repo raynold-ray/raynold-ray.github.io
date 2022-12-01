@@ -1,0 +1,360 @@
+/* 
+Program Name:   Trio Render Farm
+Developer:      Royal Raynold
+Date:           30th November, 2022
+FileType:       CSS
+*/
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --bg: #FEFEFE;
+    --btnHover1: #df2214;
+    --hover: #a50b00;
+    --textPrimary: #3b3b3b;
+    --textSecondary: #f3f3f3;
+    --textGrey: #e0e0e0;
+    --textGrey1: #f0e3e3;
+    --textBlack: #131313;
+    --shadowLight: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    --shadowDark: 0 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--textPrimary);
+    text-decoration: none;
+}
+.wrapper{
+    background: var(--bg);
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    box-shadow: var(--shadowLight);
+    background: var(--bg);
+    left: 0;top: 0;right: 0;
+    z-index: 5;
+}
+.logo,
+.links{
+    display: flex;
+}
+.logo{
+    padding: 15px 5px 5px;
+}
+.logo i{
+    transform: rotate(90deg);
+    font-weight: bold;
+}
+.logo p{
+    margin-left: 10px;
+    
+}
+.links li{
+    margin-left: 20px;
+    padding: 15px 5px 5px;
+}
+.links li:hover{
+    background: var(--hover);
+    color: var(--textSecondary);
+}
+
+/* BUTTON DESIGN */
+.btn1{
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: var(--textGrey);
+    background: var(--hover);
+    box-shadow: var(--shadowLight);
+    border-radius: 1px;
+    transition: 1s;
+    cursor: pointer;
+}
+.btn1:hover{
+    background: var(--btnHover1);
+}
+
+/* HOME */
+.bg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("./images/aurelio-la-ferla-r1.jpg");
+    background-position: center;
+    background-size: 400%;
+    background-repeat: no-repeat;
+}
+.bg h3{
+    color: var(--textSecondary);
+    font-size: 2rem;
+}
+.bg p{
+    color: var(--textSecondary);
+    font-weight: 200;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+.reasons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1.2rem;
+    padding: 20px 10%;
+}
+.reasons .item{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    box-shadow: var(--shadowLight);
+    border: 1px solid var(--textGrey1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: .8rem;
+    color: var(--hover);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.reasons .item i{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--hover);
+}
+.reasons .item:hover{
+    transform: translateY(-7px);
+}
+
+/* TITLE DESIGNS */
+.title1{
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 10%;
+    margin: 70px 0 20px;
+    color: var(--textBlack);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.title2{
+    letter-spacing: 1px;
+    color: var(--textBlack) !important;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.text{
+    text-align: center;
+    padding: 0 10%;
+}
+
+.rendering{
+    background: var(--textGrey1);
+    padding: 20px 10%;
+}
+.renders{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2rem;
+    
+    width: 100%;
+}
+.renders .item{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    color: var(--hover);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.renders .item i{
+    margin-right: 20px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--hover);
+}
+.renders .item:hover{
+    transform: translateY(-7px);
+    box-shadow: var(--shadowLight);
+}
+.vid{
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+}
+.vid p{
+    margin-left: 20px;
+    max-width: 500pxggggig;
+}
+.vid img{
+    width: 200px;
+}
+
+
+/* PRICING */
+.pricing{
+    padding: 30px 20%;
+}
+
+
+
+/* FOOTER */
+.footer{
+    background: var(--hover);
+    padding: 30px 10% 5px 10%;
+}
+.fFooter{
+    padding: 30px 10% 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.2rem;
+}
+.footer p{
+    text-align: center;
+    color: var(--textGrey1);
+}
+.fSection1 ul{
+    display: flex;
+}
+.fSection1 ul li{
+    margin-right: 10px;
+}
+.fSection1 ul i{
+    color: var(--textGrey1);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.fSection1 ul i:hover{
+    transform: rotate(30deg);
+}
+.fSection li, .fSection i, .footer a, sup{
+    color: var(--textGrey1);
+    margin-top: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.fSection li:hover{
+    transform: translateX(3px);
+    color: var(--deeporange);
+    font-weight: bold;
+}
+.fSection h3{
+    font-size: 1.5rem;
+    color: var(--deeporange);
+    pointer-events: none;
+}
+.text1 a{
+    color: var(--btnHover1);
+    font-weight: 600;
+}
+
+@media screen And (max-width: 700px){
+    .reasons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .vid{
+        flex-direction: column-reverse;
+    }
+    .renders{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .fFooter{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bg{
+        padding: 0 10%;
+    }
+    .bg h3{
+        text-align: center;
+    }
+    .text{
+        padding: 20px 0;
+    }
+}
+
+@media screen And (max-width: 400px){
+    .navbar{
+        flex-direction: column;
+    }
+    .bg{
+        align-items: flex-start;
+        padding: 0 10%;
+    }
+    .bg h3{
+        font-size: 1.2rem !important;
+        text-align: left;
+    }
+    .reasons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .renders{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .vid{
+        flex-direction: column-reverse;
+    }
+    .home{
+        margin-top: 50px;
+    }
+}
+
+@media screen And (max-width: 300px){
+    .navbar{
+        align-items:flex-start;
+    }
+    .logo{
+        padding-left: 15px;
+    }
+    .links{
+        flex-direction: column;
+        width: 100%;
+    }
+    .reasons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home{
+        margin-top: 170px;
+    }
+    .bg{
+        background: url("./images/aurelio-la-ferla-r1.jpg");
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen And (max-width: 250px){
+    .navbar{
+        align-items:flex-start;
+    }
+    .home{
+        margin-top: 170px;
+    }
+    .bg{
+        background: url("./images/aurelio-la-ferla-r1.jpg");
+    }
+    .logo{
+        padding-left: 15px;
+    }
+    .links{
+        flex-direction: column;
+        width: 100%;
+    }
+    .reasons{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
