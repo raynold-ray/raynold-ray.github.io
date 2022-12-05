@@ -1,0 +1,45 @@
+<!-- 
+Program Name:   Dictionary App
+Developer:      Royal Raynold
+Date:           5th December, 2022
+FileType:       HTML 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="./assets/css/fa-solid.css.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <h3>Dictionary App</h3>
+        <div class="input">
+            <input type="text" name="word" id="word" placeholder="Type a word to search">
+            <button id="btnSearch">Search</button>
+        </div>
+        <div id="result" class="hidden">
+            <div class="word">
+                <h3 id="sWord"></h3>
+                <audio id="snd" src=""></audio>
+                <i class="fa fa-volume-up" id="speak" onclick="play()" aria-hidden="true"></i>
+            </div>
+            <div class="definition">
+                <p id="inf"></p>
+                <p id="definition"></p>
+                <p id="example"></p>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Made By Raynold with a😊</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

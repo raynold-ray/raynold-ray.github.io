@@ -1,0 +1,110 @@
+/* 
+Program Name:   Dictionary App
+Developer:      Royal Raynold
+Date:           5th December, 2022
+FileType:       CSS  
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2e2e2e;
+}
+body{
+    background: #ff6f6f;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width:  700px;
+    width: 500px;
+    padding: 50px 30px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.input input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    border: 2px solid #fafafa;
+    padding: 8px;
+    border-radius: 5px;
+    color: #ff6f6f;
+    font-weight: 500;
+}
+.input button{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #fafafa;
+    font-weight: 700;
+    background: #ff6f6f;
+}
+.word{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#sWord{
+    color: #ff6f6f;
+}
+#inf{
+    color: #cfcfcf;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+#speak{
+    color: #ff6f6f;
+}
+#definition{
+    margin: 20px 0;
+}
+#example{
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #646464;
+    background: #fafafa;
+    padding: 10px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}
+.footer p{
+    margin-top: 100vh;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 530px) {
+    .wrapper{
+        width: 300px;
+        padding: 50px 15px;
+        background: #ffffff;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .wrapper{
+        width: 200px;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .input button{
+        margin-left: 0;
+    }
+}
