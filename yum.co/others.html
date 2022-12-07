@@ -24,12 +24,11 @@
         <div class="cart">
             <a href="#" class="menu"><i class="fas fa-bars" id="menu"></i></a>
             <a href="#"><i class="fas fa-search" id="btnSearch"></i></a>
-            <a href="#"><i class="fas fa-cart-plus"></i></a>
-            <a href="#"><i class="fas fa-user-circle"></i></a>
-            
+            <a href="#"><i class="fas fa-cart-plus" id="viewCart"></i></a>
+            <a href="#"><i class="fas fa-user-circle" id="account"></i></a>
         </div>
     </div>
-    <div class="searchDiv" id="searchDiv">
+    <div class="searchDiv disable" id="searchDiv">
         <div class="close" id="btnClose"> X </div>
         <div class="searchBox">
             <input type="text" name="searchText" id="searchText">
@@ -132,29 +131,50 @@
     
     <!-- <p class="more">More items</p> -->
 
-    <div class="signForm">
-        <form action="#" method="post">
-            <label for="" class="sTitle">Sign In Form</label><br>
-            <p>Username </p>
-            <input type="text" class="edit" name="username" id="username">
-            <p>Password </p>
-            <input type="password" class="edit" name="passwd" id="passwd"><br>
-            <input type="checkbox" class="check" name="rem" id="rem"> Remember me<br>
-            <input type="submit" class="btnSubmit" value="Sign in">
-            <p>Don't have an account? <a href="#" class="signuplink">Sign Up</a></p>
-        </form>
-        <form action="#" method="post">
-            <label for="" class="sTitle">Sign Up Form</label><br>
-            <p>E-mail </p>
-            <input type="text" class="edit" name="username" id="username">
-            <p>Password </p>
-            <input type="password" class="edit" name="passwd" id="passwd"><br>
-            <p>Confirm Password </p>
-            <input type="password" class="edit" name="passwd" id="passwd"><br>
-            <input type="checkbox" class="check" name="rem" id="rem"><label for="" class="chkL">Remember me</label><br>
-            <input type="submit" class="btnSubmit" value="Sign in">
-            <p>Don't have an account? <a href="#" class="signuplink">Sign Up</a></p>
-        </form>
+    <div class="sSign disable" id="sSign">
+        <i class="fa fa-plus cClose" id="sClose" aria-hidden="true"></i>
+        <div class="signForm">
+            <form action="#" method="post" id="one">
+                <label for="" class="sTitle">Sign In Form</label>
+                <p>Username </p>
+                <input type="text" class="edit" name="username" id="username" placeholder="Username">
+                <p>Password </p>
+                <input type="password" class="edit" name="passwd" id="passwd" placeholder="Password"><br>
+                <input type="checkbox" class="check" name="rem" id="rem"> Remember me<br>
+                <input type="submit" class="btnSubmit" value="Sign in">
+                <p>Don't have an account? <a href="#two" class="signuplink">Sign Up</a></p>
+            </form>
+            <form action="#" method="post" id="two">
+                <label for="" class="sTitle">Sign Up Form</label><br>
+                <p>E-mail </p>
+                <input type="text" class="edit" name="email" id="email" placeholder="E-mail">
+                <p>Password </p>
+                <input type="password" class="edit" name="passwd" id="passwd" placeholder="Password"><br>
+                <p>Confirm Password </p>
+                <input type="password" class="edit" name="cpasswd" id="cpasswd" placeholder="Confirm Password"><br>
+                
+                <input type="submit" class="btnSubmit" value="Sign up">
+                <p>I have an account? <a href="#one" class="signuplink">Sign In</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="cCart disable" id="cCart">
+        <div class="sCart">
+            <div class="cHead">
+                <h3>Shopping Cart</h3>
+                <i class="fa fa-plus cClose" id="cClose" aria-hidden="true"></i>
+            </div>
+            <div class="clist">
+                <ul class="parent">
+                </ul>
+                <h3 class="total" id="total">You have no items</h3>
+            </div>
+            <div class="cButton disable">
+                <button id="chkout">Check out</button>
+            </div>
+        </div>
     </div>
 
     <!-- FOOTER -->
@@ -190,8 +210,7 @@
             </div>
         </div>
 
-        <p>Developed By Royal Raynold </p>
-        <p>&copy Copyright 2022, </p>
+        <p>Developed By Royal Raynold, 2022 </p>
     </div>
     <script src="./script.js"></script>
 </body>

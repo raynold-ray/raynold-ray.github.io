@@ -16,20 +16,19 @@
         </div>
 
         <div class="links" id="links">
-            <a href="./index.html">Home</a>
+            <a href="./home.html" >Home</a>
             <a href="#" class="active">Our Dishes</a>
-            <a href="delivery.html">Delivery</a>
-            <a href="contact.html">Contact</a>
+            <a href="./delivery.html">Delivery</a>
+            <a href="./contact.html">Contact</a>
         </div>
         <div class="cart">
             <a href="#" class="menu"><i class="fas fa-bars" id="menu"></i></a>
             <a href="#"><i class="fas fa-search" id="btnSearch"></i></a>
-            <a href="#"><i class="fas fa-cart-plus"></i></a>
-            <a href="#"><i class="fas fa-user-circle"></i></a>
-            
+            <a href="#"><i class="fas fa-cart-plus" id="viewCart"></i></a>
+            <a href="#"><i class="fas fa-user-circle" id="account"></i></a>
         </div>
     </div>
-    <div class="searchDiv" id="searchDiv">
+    <div class="searchDiv disable" id="searchDiv">
         <div class="close" id="btnClose"> X </div>
         <div class="searchBox">
             <input type="text" name="searchText" id="searchText">
@@ -46,7 +45,7 @@
             
             <a href="#"><img src="./assets/images/orangejuice.png" alt=""></a>
             <div class="oInfo">
-                <h2>Orange Juice</h2>
+                <h2 class="productName">Orange Juice</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -54,7 +53,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.80.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="d1">order item</button>
             </div>
         </div>
 
@@ -62,7 +62,7 @@
             
             <a href="#"><img src="./assets/images/whitecoffe.png" alt=""></a>
             <div class="oInfo">
-                <h2>White Coffee</h2>
+                <h2 class="productName">White Coffee</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -70,7 +70,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.120.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="d2">order item</button>
             </div>
         </div>
 
@@ -78,7 +79,7 @@
             
             <a href="#"><img src="./assets/images/hibiscus tea.png" alt=""></a>
             <div class="oInfo">
-                <h2>Hibiscus Tea</h2>
+                <h2 class="productName">Hibiscus Tea</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -86,7 +87,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.150.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="d3">order item</button>
             </div>
         </div>
     </div>
@@ -98,14 +100,15 @@
             
             <a href="#"><img src="./assets/images/cupcake.png" alt=""></a>
             <div class="oInfo">
-                <h2>Cupcakes</h2>
+                <h2 class="productName">Cupcakes</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.20.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="ds1">order item</button>
             </div>
         </div>
 
@@ -113,7 +116,7 @@
             
             <a href="#"><img src="./assets/images/unnamed.png" alt=""></a>
             <div class="oInfo">
-                <h2>Strawberry Cake</h2>
+                <h2 class="productName">Strawberry Cake</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -121,7 +124,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.650.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="ds2">order item</button>
             </div>
         </div>
 
@@ -129,7 +133,7 @@
             
             <a href="#"><img src="./assets/images/purepng.com-birthday-cakefood-chocolate-cake-sweet-tasty-birthday-eat-delicious-941524600851xxygd.png" alt=""></a>
             <div class="oInfo">
-                <h2>Cream Cake</h2>
+                <h2 class="productName">Cream Cake</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -137,7 +141,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.820.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="ds3">order item</button>
             </div>
         </div>
         
@@ -149,7 +154,7 @@
         <div class="item">
             <a href="#"><img src="./assets/images/samosa.png" alt=""></a>
             <div class="oInfo">
-                <h2>Samosa</h2>
+                <h2 class="productName">Samosa</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -157,14 +162,15 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.40.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="s1">order item</button>
             </div>
         </div>
 
         <div class="item">
             <a href="#"><img src="./assets/images/df9trc2-d52547b8-1f03-4900-ba18-7ddc2106f90e.png" alt=""></a>
             <div class="oInfo">
-                <h2>Burger</h2>
+                <h2 class="productName">Burger</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -172,14 +178,15 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.100.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="s2">order item</button>
             </div>
         </div>
 
         <div class="item">
             <a href="#"><img src="./assets/images/Snacks-Food-Plate-PNG.png" alt=""></a>
             <div class="oInfo">
-                <h2>All-in-one</h2>
+                <h2 class="productName">All-in-one</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -187,14 +194,15 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.300.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="s3">order item</button>
             </div>
         </div>
 
         <div class="item">
             <a href="#"><img src="./assets/images/Spring-Roll-PNG-Picture.png" alt=""></a>
             <div class="oInfo">
-                <h2>Fried Spring Roll</h2>
+                <h2 class="productName">Fried Spring Roll</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -202,7 +210,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.130.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="s4">order item</button>
             </div>
         </div>
     </div>
@@ -213,7 +222,7 @@
         <div class="item">
             <a href="#"><img src="./assets/images/chilled-tomato.png" alt="""></a>
             <div class="oInfo">
-                <h2>Tomato Soup</h2>
+                <h2 class="productName">Tomato Soup</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -221,7 +230,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.240.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="su1">order item</button>
             </div>
         </div>
 
@@ -229,7 +239,7 @@
         <div class="item">
             <a href="https://lunchbrunch.pk/Homemade-Hot-And-Sour-Soup-in-Lahore"><img src="./assets/images/Hot-And-Sour-Soup-Per-Person1.jpg" alt="""></a>
             <div class="oInfo">
-                <h2>Hot Sour Soup</h2>
+                <h2 class="productName">Hot Sour Soup</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -237,21 +247,23 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.340.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="su2">order item</button>
             </div>
         </div>
         <!-- FIRST ITEM -->
         <div class="item">
             <a href="#"><img src="./assets/images/15-minutepumpkinsoup.png" alt="""></a>
             <div class="oInfo">
-                <h2>Pumpkin Soup</h2>
+                <h2 class="productName">Pumpkin Soup</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.220.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="su3">order item</button>
             </div>
         </div>
     </div>
@@ -264,14 +276,15 @@
             
             <a href="https://www.pngarts.com/explore/76419"><img src="./assets/images/pasta.png" alt="https://www.freepnglogos.com/uploads/pasta-png/pasta-are-you-eating-out-gluten-with-the-kids-8.png"></a>
             <div class="oInfo">
-                <h2>Salad Pasta</h2>
+                <h2 class="productName">Salad Pasta</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.260.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="m1">order item</button>
             </div>
         </div>
 
@@ -280,7 +293,7 @@
             
             <a href="https://purepng.com/public/uploads/large/purepng.com-noodlenoodlechinesestaple-foodwheat-doughnudel-1411527964068i1kjo.png"><img src="./assets/images/noodleChinese.png" alt=""></a>
             <div class="oInfo">
-                <h2>Asian Noodles</h2>
+                <h2 class="productName">Asian Noodles</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -288,7 +301,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.280.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="m2">order item</button>
             </div>
         </div>
 
@@ -297,13 +311,14 @@
             
             <a href="https://www.pngarts.com/explore/76419"><img src="./assets/images/Vegan-Food-PNG-Free-Download.png" alt=""></a>
             <div class="oInfo">
-                <h2>Full Vegan</h2>
+                <h2 class="productName">Full Vegan</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.360.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="m3">order item</button>
             </div>
         </div>
 
@@ -312,14 +327,15 @@
             
             <a href="https://static.wixstatic.com/media/2cd43b_54837c8399bf43cda0160037606f8ddb~mv2.png/v1/fill/w_248,h_228,fp_0.50_0.50/2cd43b_54837c8399bf43cda0160037606f8ddb~mv2.png"><img src="./assets/images/fries.png" alt=""></a>
             <div class="oInfo">
-                <h2>French Fries</h2>
+                <h2 class="productName">French Fries</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.180.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="m4">order item</button>
             </div>
         </div>
 
@@ -328,7 +344,7 @@
             
             <a href="https://www.pikpng.com/pngl/b/73-735958_food-dish-png.png"><img src="./assets/images/itbreak.png" alt=""></a>
             <div class="oInfo">
-                <h2>Toast Breakfast</h2>
+                <h2 class="productName">Toast Breakfast</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -336,7 +352,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.210.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="m5">order item</button>
             </div>
         </div>
 
@@ -345,7 +362,7 @@
             
             <a href="https://pluspng.com/img-png/fish-fry-png-hd-fried-fish-png-transparent-image-1224.png"><img src="./assets/images/friedfish.png" alt=""></a>
             <div class="oInfo">
-                <h2>Fried Fish</h2>
+                <h2 class="productName">Fried Fish</h2>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -353,36 +370,58 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half"></i>
                 </div>
-                <a href="./delivery.html"><button>order item</button></a>
+                <h4 class="price">ksh.400.00</h4>
+                <button id="addCart" class="orderitem" data-product-id="m6">order item</button>
             </div>
         </div>
 
     </div>
     <!-- <p class="more">More items</p> -->
 
-    <div class="signForm">
-        <form action="#" method="post">
-            <label for="" class="sTitle">Sign In Form</label><br>
-            <p>Username </p>
-            <input type="text" class="edit" name="username" id="username">
-            <p>Password </p>
-            <input type="password" class="edit" name="passwd" id="passwd"><br>
-            <input type="checkbox" class="check" name="rem" id="rem"> Remember me<br>
-            <input type="submit" class="btnSubmit" value="Sign in">
-            <p>Don't have an account? <a href="#" class="signuplink">Sign Up</a></p>
-        </form>
-        <form action="#" method="post">
-            <label for="" class="sTitle">Sign Up Form</label><br>
-            <p>E-mail </p>
-            <input type="text" class="edit" name="username" id="username">
-            <p>Password </p>
-            <input type="password" class="edit" name="passwd" id="passwd"><br>
-            <p>Confirm Password </p>
-            <input type="password" class="edit" name="passwd" id="passwd"><br>
-            <input type="checkbox" class="check" name="rem" id="rem"><label for="" class="chkL">Remember me</label><br>
-            <input type="submit" class="btnSubmit" value="Sign in">
-            <p>Don't have an account? <a href="#" class="signuplink">Sign Up</a></p>
-        </form>
+    <div class="sSign disable" id="sSign">
+        <i class="fa fa-plus cClose" id="sClose" aria-hidden="true"></i>
+        <div class="signForm">
+            <form action="#" method="post" id="one">
+                <label for="" class="sTitle">Sign In Form</label>
+                <p>Username </p>
+                <input type="text" class="edit" name="username" id="username" placeholder="Username">
+                <p>Password </p>
+                <input type="password" class="edit" name="passwd" id="passwd" placeholder="Password"><br>
+                <input type="checkbox" class="check" name="rem" id="rem"> Remember me<br>
+                <input type="submit" class="btnSubmit" value="Sign in">
+                <p>Don't have an account? <a href="#two" class="signuplink">Sign Up</a></p>
+            </form>
+            <form action="#" method="post" id="two">
+                <label for="" class="sTitle">Sign Up Form</label><br>
+                <p>E-mail </p>
+                <input type="text" class="edit" name="email" id="email" placeholder="E-mail">
+                <p>Password </p>
+                <input type="password" class="edit" name="passwd" id="passwd" placeholder="Password"><br>
+                <p>Confirm Password </p>
+                <input type="password" class="edit" name="cpasswd" id="cpasswd" placeholder="Confirm Password"><br>
+                
+                <input type="submit" class="btnSubmit" value="Sign up">
+                <p>I have an account? <a href="#one" class="signuplink">Sign In</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="cCart disable" id="cCart">
+        <div class="sCart">
+            <div class="cHead">
+                <h3>Shopping Cart</h3>
+                <i class="fa fa-plus cClose" id="cClose" aria-hidden="true"></i>
+            </div>
+            <div class="clist">
+                <ul class="parent">
+                </ul>
+                <h3 class="total" id="total">You have no items</h3>
+            </div>
+            <div class="cButton disable">
+                <button id="chkout">Check out</button>
+            </div>
+        </div>
     </div>
 
     <!-- FOOTER -->
@@ -418,8 +457,7 @@
             </div>
         </div>
 
-        <p>Developed By Royal Raynold </p>
-        <p>&copy Copyright 2022, </p>
+        <p>Developed By Royal Raynold, 2022 </p>
     </div>
     <script src="./script.js"></script>
 </body>
