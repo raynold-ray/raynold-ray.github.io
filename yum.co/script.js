@@ -1,15 +1,18 @@
 const searchDiv = document.getElementById("searchDiv");
 const btnClose = document.getElementById("btnClose");
-const btnSearch = document.getElementById("btnSearch");
 const links = document.getElementById("links");
+
 const btnMenu = document.getElementById("menu");
-const cCart = document.getElementById("cCart");
+const btnSearch = document.getElementById("btnSearch");
+const viewCart = document.getElementById("viewCart");
 const account = document.getElementById("account");
+
+
+const cCart = document.getElementById("cCart");
 const sSign = document.getElementById("sSign");
 const btncClose = document.getElementById("cClose");
 const btnsClose = document.getElementById("sClose");
 const addCart = document.getElementById("addCart");
-const viewCart = document.getElementById("viewCart");
 const vViewCart = document.getElementById("vViewCart");
 const total = document.getElementById("total");
 const minus = document.getElementById("minus");
@@ -110,18 +113,6 @@ btnClose.addEventListener("click", () => {
     searchDiv.classList.toggle("disable");
 });
 
-dmap.addEventListener("mousemove", (e) => {
-    let x = e.clientX;
-    let y = e.clientY;
-
-    gMap.style.transformOrigin = `${x}px ${y}px`;
-    gMap.style.transform = 'scale(2)';
-});
-
-dmap.addEventListener("mouseleave", () => {
-    gMap.style.transform = 'scale(1)';;
-});
-
 btncClose.addEventListener("click", () => {
     cCart.classList.toggle("disable");
 });
@@ -138,9 +129,6 @@ viewCart.addEventListener("click", () => {
     cCart.classList.toggle("disable");
 });
 
-vViewCart.addEventListener("click", () => {
-    cCart.classList.toggle("disable");
-});
 
 btnSearch.addEventListener("click", () => {
     searchDiv.classList.toggle("disable");
@@ -149,6 +137,7 @@ btnSearch.addEventListener("click", () => {
 btnMenu.addEventListener("click", () => {
     links.classList.toggle("disable");
 });
+
 
 parent.addEventListener("click", (e) =>{
     const reducing = e.target.classList.contains("fa-minus-circle");
@@ -170,5 +159,13 @@ parent.addEventListener("click", (e) =>{
         updateCartHtml();
     }
 })
+
+try {
+    vViewCart.addEventListener("click", () => {
+        cCart.classList.toggle("disable");
+    });
+} catch (error) {
+    
+}
 
 updateCartHtml();
