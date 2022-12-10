@@ -98,12 +98,20 @@ products.forEach(product => {
                 price: +productPrice,
                 basePrice: +productPrice
             }
+            viewCart.style.background = '#000';
+            ShowLoad();
+            
+
             updateCartProducts(pCart);
             
             updateCartHtml();
         }
     })
 })
+async function ShowLoad(){
+    await sleep(500);
+    viewCart.style.background = '#eeeeee';
+}
 
 
 
@@ -167,5 +175,5 @@ try {
 } catch (error) {
     
 }
-
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 updateCartHtml();
