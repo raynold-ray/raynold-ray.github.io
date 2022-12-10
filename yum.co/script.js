@@ -63,6 +63,7 @@ const updateCartHtml = function(){
         document.querySelector(".cButton").classList.add("disable");
         //no items in cart
         total.innerText = "No items!"
+        parent.innerHTML = "";
     }
 }
 
